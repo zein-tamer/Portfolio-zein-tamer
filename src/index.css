@@ -1,0 +1,116 @@
+/* تعريف المتغيرات للوضع الداكن (الافتراضي) والوضع الفاتح */
+:root {
+  /* الوضع النهاري - ألوان فاخرة ومريحة للعين (Slate Palette) */
+  --bg-color: #f8fafc; /* خلفية أوف-وايت باردة (تميل للأزرق الفاتح جداً) */
+  --text-primary: #1e293b; /* كحلي داكن عميق كلون بديل للأسود القاسي */
+  --text-secondary: #64748b; /* رمادي هادئ وأنيق للنصوص الوصفية */
+  --card-border: #e2e8f0; /* إطار ناعم جداً ومندمج للبطاقات */
+  --card-hover-border: #94a3b8; /* لون إطار بارز باحترافية عند تمرير الماوس */
+  --primary-accent: #2563eb; /* أزرق ملكي للروابط */
+}
+
+body.dark-mode {
+  /* الوضع الليلي - اللون الجديد الذي اخترته */
+  --bg-color: #030712; 
+  --text-primary: #f9fafb; 
+  --text-secondary: #9ca3af; 
+  --card-border: #1f2937; 
+  --card-hover-border: #374151; 
+  --primary-accent: #60a5fa; 
+}
+
+/* تطبيق المتغيرات على الـ Body */
+body {
+  background-color: var(--bg-color) !important;
+  color: var(--text-primary) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* إخفاء الخلفية الداكنة الثابتة القديمة لأن الـ body سيتولى الأمر */
+.custom-bg-dark {
+  background-color: transparent !important;
+}
+
+/* تنسيق النصوص والروابط في الـ Navbar */
+.text-navbar {
+  color: var(--text-primary) !important;
+}
+.active-link {
+  color: var(--text-primary) !important;
+}
+.text-secondary {
+  color: var(--text-secondary) !important;
+}
+
+/* تنسيق بطاقات المشاريع (المطابق للقالب الأصلي) */
+.project-card-custom {
+  border: 1px solid var(--card-border) !important;
+  border-radius: 0.5rem;
+  transition: border-color 0.3s ease;
+}
+
+.project-card-custom:hover {
+  border-color: var(--card-hover-border) !important;
+}
+
+/* تأثير التكبير عند تمرير الماوس على صورة المشروع */
+.custom-img-hover {
+  transition: transform 0.3s ease-in-out;
+}
+.project-card-custom:hover .custom-img-hover {
+  transform: scale(1.05);
+}
+
+/* ألوان نصوص البطاقات */
+.custom-title-link {
+  color: var(--text-primary) !important;
+  transition: color 0.2s;
+}
+.custom-title-link:hover {
+  color: var(--primary-accent) !important;
+}
+
+.project-description {
+  color: var(--text-secondary) !important;
+}
+
+.custom-learn-more {
+  color: var(--primary-accent) !important;
+  font-size: 0.95rem;
+}
+.custom-learn-more:hover {
+  text-decoration: underline !important;
+}
+
+/* توحيد أحجام صور المشاريع */
+.custom-card-img {
+  aspect-ratio: 16 / 9; /* يمكنك تغييرها إلى 4/3 إذا أردت الصور أن تكون أقرب للمربع */
+  object-fit: cover; /* هذه الخاصية تضمن ملء المساحة وقص الزوائد دون تمطيط الصورة */
+  width: 100%;
+  display: block;
+}
+
+
+/* تأثيرات التحويم لأيقونات الفوتر */
+.icon-hover-effect {
+  display: inline-block; /* ضروري لكي تعمل خاصية الـ transform */
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-hover-effect:hover {
+  transform: translateY(-4px) scale(1.15); /* ترتفع للأعلى قليلاً وتكبر */
+  color: var(--text-primary) !important; /* يصبح لونها ساطعاً */
+}
+
+/* تأثير التحويم لزر الوضع الليلي والنهاري في الناف بار */
+.theme-toggle-hover {
+  display: inline-block;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* تأثير ارتداد (Bouncy) سلس */
+}
+
+.theme-toggle-hover:hover {
+  transform: scale(1.2) rotate(25deg); /* تكبر وتدور قليلاً */
+  filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.3)); /* توهج خفيف */
+}
