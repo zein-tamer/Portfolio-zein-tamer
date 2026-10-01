@@ -35,8 +35,7 @@ const About = () => {
           {/* العمود الثاني: النبذة التعريفية */}
           <div className="col-md-8">
             <p className="fs-5 project-description" style={{ lineHeight: '1.8' }}>
-              Hello! I am Zein, a passionate developer specializing in building robust web and mobile applications. 
-              With a strong foundation in the MERN stack (MongoDB, Express, React, Node.js) and cross-platform mobile development using React Native.
+             "I am Zein, a Full-Stack Software Engineer specializing in architecting secure, high-performance web and mobile ecosystems. Leveraging advanced expertise in the MERN stack, TypeScript, and React Native, I engineer scalable platforms designed to handle complex business logic and real-time data flows. From implementing robust security architectures to orchestrating seamless real-time infrastructure with WebSockets, my focus is on delivering enterprise-grade solutions. Whether building comprehensive luxury e-commerce architectures or cross-platform operational applications, I transform ambitious technical requirements into flawlessly executed digital products."
             </p>
             
             <p className="project-description mt-4" style={{ lineHeight: '1.8' }}>

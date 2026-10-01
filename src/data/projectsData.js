@@ -5,6 +5,18 @@ const projectsData = [
     imgSrc: '/static/images/TAMER2.png',
     href: 'https://github.com/zein-tamer/majara-repo',
   },
+   {
+    title: 'CakeVerse',
+    description: `A responsive e-commerce frontend tailored for a custom cake boutique. Built with React and React Router to provide seamless dynamic navigation across diverse cake collections, special occasions, and integrated articles.`,
+    imgSrc: '/static/images/CakeVerse.png',
+    href: 'https://cakeverse.onrender.com',
+  },
+   {
+    title: 'E_Tourism',
+    description: `A comprehensive single-page frontend interface for an e-tourism platform. Built with HTML, CSS, and Vanilla JavaScript, featuring interactive destination galleries, dynamic booking forms, and a responsive layout for a seamless user experience.`,
+    imgSrc: '/static/images/E_Tourism.png',
+    href: 'https://e-tourism.onrender.com',
+  },
   {
     title: 'Mahami',
     description: `A mobile task management application built using React Native and Expo. Configured and successfully built for Android via EAS Build, offering seamless performance for daily productivity.`,
