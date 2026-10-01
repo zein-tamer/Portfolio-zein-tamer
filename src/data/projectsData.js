@@ -21,7 +21,7 @@ const projectsData = [
     title: 'Mahami',
     description: `A mobile task management application built using React Native and Expo. Configured and successfully built for Android via EAS Build, offering seamless performance for daily productivity.`,
     imgSrc: '/static/images/task.png',
-    href: 'https://github.com/zein-tamer/mahami-repo',
+    href: 'https://github.com/zein-tamer/Mahami-',
   },
   {
     title: 'TAMER-CHAT',
