@@ -3,7 +3,7 @@ const projectsData = [
     title: 'TAMER STORE',
     description: `A comprehensive luxury e-commerce platform featuring a robust MERN stack backend and an intuitive user interface. Built to handle complex product logic and deliver a premium shopping experience.`,
     imgSrc: '/static/images/TAMER2.png',
-    href: 'https://github.com/zein-tamer/majara-repo',
+    href: 'https://tamer-store-frontend.onrender.com',
   },
    {
     title: 'CakeVerse',
